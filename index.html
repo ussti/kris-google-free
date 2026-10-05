@@ -432,6 +432,10 @@
   .fbody .alist{margin-top:0}
   .fbody p{font-size:14.5px;line-height:1.58;color:var(--ink-soft);margin-top:12px}
   .fbody p b{color:var(--ink)}
+.fbody .open{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:9px 14px;
+  border:1.5px solid var(--sky-deep);color:var(--ink);font-weight:700;font-size:14px;
+  text-decoration:none}
+.fbody .open .go{color:var(--mark);font-size:17px}
   .fold.dark{background:var(--ink);border-color:var(--sky-deep)}
   .fold.dark>summary{color:var(--paper)}
   .fold.dark>summary .sub{color:var(--on-dark-soft)}
@@ -516,35 +520,35 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
     <span class="c">продуктов, доступных на обычном<br>бесплатном аккаунте Google</span></div>
 
   <div class="scheme">
-    <svg viewBox="0 0 320 132" role="img" aria-label="Схема: 12 продуктов разложены на три группы — работа с информацией, видео и звук, свои инструменты; отдельно полка для кода">
-      <rect x="6" y="6" width="308" height="120" class="sv-panel"></rect>
+    <svg viewBox="0 0 320 146" role="img" aria-label="Схема: 12 продуктов разложены на четыре группы — на каждый день, работа с информацией, видео и звук, инструменты под себя">
+      <rect x="6" y="6" width="308" height="134" class="sv-panel"></rect>
 
-      <rect x="16" y="18" width="90" height="60" class="sv-hi"></rect>
-      <text x="25" y="38" class="sv-t">Информация</text>
-      <text x="25" y="52" class="sv-ts">разобраться,</text>
-      <text x="25" y="63" class="sv-ts">найти, изучить</text>
-      <circle cx="94" cy="66" r="8" class="sv-badge"></circle>
-      <text x="91" y="69" class="sv-bt">5</text>
+      <rect x="16" y="18" width="139" height="40" class="sv-hi"></rect>
+      <text x="25" y="35" class="sv-t">На каждый день</text>
+      <text x="25" y="48" class="sv-ts">карты, камера, голос</text>
+      <circle cx="143" cy="45" r="8" class="sv-badge"></circle>
+      <text x="140" y="48" class="sv-bt">3</text>
 
-      <rect x="114" y="18" width="90" height="60" class="sv-sub"></rect>
-      <text x="123" y="38" class="sv-t">Визуал и звук</text>
-      <text x="123" y="52" class="sv-ts">видео, музыка,</text>
-      <text x="123" y="63" class="sv-ts">голос и речь</text>
-      <circle cx="192" cy="66" r="8" class="sv-badge"></circle>
-      <text x="189" y="69" class="sv-bt">4</text>
+      <rect x="165" y="18" width="139" height="40" class="sv-sub"></rect>
+      <text x="174" y="35" class="sv-t">Информация</text>
+      <text x="174" y="48" class="sv-ts">найти и разобраться</text>
+      <circle cx="292" cy="45" r="8" class="sv-badge"></circle>
+      <text x="289" y="48" class="sv-bt">4</text>
 
-      <rect x="212" y="18" width="90" height="60" class="sv-sub"></rect>
-      <text x="221" y="38" class="sv-t">Свои</text>
-      <text x="221" y="52" class="sv-ts">инструменты</text>
-      <text x="221" y="63" class="sv-ts">под задачу</text>
-      <circle cx="290" cy="66" r="8" class="sv-badge"></circle>
-      <text x="287" y="69" class="sv-bt">3</text>
+      <rect x="16" y="64" width="139" height="40" class="sv-sub"></rect>
+      <text x="25" y="81" class="sv-t">Видео и звук</text>
+      <text x="25" y="94" class="sv-ts">ролики и музыка</text>
+      <circle cx="143" cy="91" r="8" class="sv-badge"></circle>
+      <text x="140" y="94" class="sv-bt">3</text>
 
-      <path d="M61 84 L61 96" class="sv-ar" marker-end="url(#ah)"></path>
-      <path d="M159 84 L159 96" class="sv-ar" marker-end="url(#ah)"></path>
-      <path d="M257 84 L257 96" class="sv-ar" marker-end="url(#ah)"></path>
-      <rect x="16" y="98" width="286" height="18" class="sv-dark"></rect>
-      <text x="25" y="111" class="sv-tw">один аккаунт Google &middot; ноль рублей</text>
+      <rect x="165" y="64" width="139" height="40" class="sv-sub"></rect>
+      <text x="174" y="81" class="sv-t">Под себя</text>
+      <text x="174" y="94" class="sv-ts">посты и макеты</text>
+      <circle cx="292" cy="91" r="8" class="sv-badge"></circle>
+      <text x="289" y="94" class="sv-bt">2</text>
+
+      <rect x="16" y="112" width="288" height="18" class="sv-dark"></rect>
+      <text x="25" y="125" class="sv-tw">один аккаунт Google &middot; ноль рублей</text>
     </svg>
     <p>В конце две отдельные полки. На одной <b>единственный платный продукт</b>: в двенадцать он не входит, но назван, потому что закрывает дизайн. На второй <b>три продукта для тех, кто пишет код</b> &mdash; остальным они не нужны.</p>
   </div>
@@ -559,15 +563,16 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
     <p>Короткий путь, если открывать все подряд некогда.</p></div>
 
   <div class="ckl">
-    <div class="ck"><span class="m">1</span><span>Разобрать документ, договор или лекцию &mdash; <span class="mono">Gemini Notebook</span></span></div>
-    <div class="ck"><span class="m">2</span><span>Найти письмо, файл или чек в собственном аккаунте &mdash; <span class="mono">Gemini</span></span></div>
-    <div class="ck"><span class="m">3</span><span>Завести помощника под задачу, которая повторяется каждую неделю &mdash; <span class="mono">Skills в Gemini</span></span></div>
-    <div class="ck"><span class="m">4</span><span>Освоить новую тему с нуля &mdash; <span class="mono">Learn Your Way</span></span></div>
-    <div class="ck"><span class="m">5</span><span>Сделать видео и музыку без съемки и студии &mdash; <span class="mono">Flow, Flow Music</span></span></div>
-    <div class="ck"><span class="m">6</span><span>Записать видеоинструкцию или ролик с ИИ-ведущим &mdash; <span class="mono">Google Vids</span></span></div>
-    <div class="ck"><span class="m">7</span><span>Наговорить текст вместо набора &mdash; <span class="mono">AI Edge Eloquent</span></span></div>
-    <div class="ck"><span class="m">8</span><span>Делать контент для соцсетей в одном стиле &mdash; <span class="mono">Pomelli</span></span></div>
-    <div class="ck"><span class="m">9</span><span>Отрепетировать сложный разговор &mdash; <span class="mono">Vantage</span></span></div>
+    <div class="ck"><span class="m">1</span><span>Спросить, где рядом открытая аптека или куда сходить с ребенком &mdash; <span class="mono">Карты в Gemini</span></span></div>
+    <div class="ck"><span class="m">2</span><span>Показать камере холодильник, счет или сломанный кран и спросить, что делать &mdash; <span class="mono">Gemini Live</span></span></div>
+    <div class="ck"><span class="m">3</span><span>Наговорить текст вместо набора &mdash; <span class="mono">Eloquent и диктовка</span></span></div>
+    <div class="ck"><span class="m">4</span><span>Разобрать документ, договор или инструкцию к технике &mdash; <span class="mono">Gemini Notebook</span></span></div>
+    <div class="ck"><span class="m">5</span><span>Найти письмо, бронь или чек в собственном аккаунте &mdash; <span class="mono">Gemini</span></span></div>
+    <div class="ck"><span class="m">6</span><span>Завести помощника под задачу, которая повторяется каждую неделю &mdash; <span class="mono">Skills в Gemini</span></span></div>
+    <div class="ck"><span class="m">7</span><span>Освоить новую тему с нуля &mdash; <span class="mono">Learn Your Way</span></span></div>
+    <div class="ck"><span class="m">8</span><span>Сделать видео и музыку без съемки и студии &mdash; <span class="mono">Flow, Flow Music</span></span></div>
+    <div class="ck"><span class="m">9</span><span>Записать видеоинструкцию или ролик с ИИ-ведущим &mdash; <span class="mono">Google Vids</span></span></div>
+    <div class="ck"><span class="m">10</span><span>Делать контент для соцсетей в одном стиле &mdash; <span class="mono">Pomelli</span></span></div>
   </div>
 
   <div class="keybox"><span class="cap">главное</span>
@@ -576,51 +581,79 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 02 — ИНФОРМАЦИЯ ======================= -->
-<div class="wrap"><section id="s-find" data-title="Разобраться и найти" data-n="02">
-  <div class="shead"><span class="eyebrow">02 &middot; работа с информацией</span>
-    <h2>Разобраться и <span class="fancy">найти</span></h2></div>
+<!-- ======================= 02 — НА КАЖДЫЙ ДЕНЬ ======================= -->
+<div class="wrap"><section id="s-life" data-title="На каждый день" data-n="02">
+  <div class="shead"><span class="eyebrow">02 &middot; в обычной жизни</span>
+    <h2>На каждый <span class="fancy">день</span></h2>
+    <p>Три вещи, которые пригодятся в первый же день: не на работе, а дома, в дороге и на кухне.</p></div>
   <p class="foldhint">нажми на продукт, чтобы раскрыть</p>
 
-  <details class="fold"><summary><span class="sm">1</span><span class="st">Gemini<span class="sub">ассистент с доступом к твоему аккаунту</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">1</span><span class="st">Карты в Gemini<span class="sub">спросить про место обычными словами</span></span><span class="pm"></span></summary>
     <div class="fbody">
-      <p><b>Что делает.</b> Отвечает обычными словами и ищет по почте, диску, документам, календарю и фотографиям сразу.</p>
-      <p><b>Где применить.</b> Найти письмо, о котором помнишь только тему. Собрать сводку переписки за месяц. Посчитать по чекам, сколько уходит на подписки.</p>
+      <p><b>Что делает.</b> В приложении Gemini на телефоне появился инструмент «Карта»: выделяешь район и спрашиваешь о нем так, как спросила бы знакомого. В ответ приходят места на карте и маршрут. В самих Google Картах есть похожая функция Ask Maps, но она пока понимает только английский.</p>
+      <p><b>Где применить.</b> Найти аптеку, которая открыта прямо сейчас. Выбрать, куда пойти с ребенком в выходные. Спланировать день в незнакомом городе, чтобы не мотаться из конца в конец.</p>
+      <a class="open" href="https://gemini.google.com/app/download/mobile" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 
-  <details class="fold"><summary><span class="sm">2</span><span class="st">Gemini Notebook<span class="sub">рабочий стол под один проект из твоих файлов</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">2</span><span class="st">Gemini Live<span class="sub">разговор голосом, ИИ видит то же, что и ты</span></span><span class="pm"></span></summary>
     <div class="fbody">
-      <p><b>Что делает.</b> Отвечает строго по загруженному и на каждую фразу дает ссылку на конкретный абзац в твоем документе. Аудио и видео расшифровывает при загрузке. Из тех же материалов собирает короткие видео-объяснения, квизы и карточки для повторения.</p>
-      <p><b>Где применить.</b> Разобрать договор, методичку или результаты анализов. Собрать конспект курса. Получить текстовую расшифровку созвона. Подготовиться к экзамену по своим же конспектам.</p>
+      <p><b>Что делает.</b> Включаешь камеру или показ экрана и разговариваешь с Gemini, как по видеосвязи. Он видит то, на что ты наводишь телефон, и отвечает голосом. Бесплатно на Android и iPhone.</p>
+      <p><b>Где применить.</b> Показать открытый холодильник и спросить, что приготовить из того, что есть. Навести камеру на счет или этикетку на незнакомом языке. Понять, почему подтекает кран, еще до звонка мастеру.</p>
+      <a class="open" href="https://gemini.google/overview/gemini-live/" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 
-  <details class="fold"><summary><span class="sm">3</span><span class="st">Skills в Gemini<span class="sub">свой ассистент под постоянную задачу, раньше назывались Gems</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">3</span><span class="st">Диктовка<span class="sub">говоришь, а на экране чистый текст</span></span><span class="pm"></span></summary>
     <div class="fbody">
-      <p><b>Что делает.</b> Один раз описываешь, кто он, что делает и в каком виде отдает результат, дальше зовешь его, когда задача повторяется. Старые Gems Google переносит сюда же.</p>
-      <p><b>Где применить.</b> Еженедельный отчет по одному шаблону. Проверка текста по твоим правилам. Ответы клиентам в твоем тоне.</p>
-    </div></details>
-
-  <details class="fold"><summary><span class="sm">4</span><span class="st">Learn Your Way<span class="sub">учебная платформа, которая перестраивает материал под тебя</span></span><span class="pm"></span></summary>
-    <div class="fbody">
-      <p><b>Что делает.</b> Берет тему или документ и разворачивает его в персональный курс: объяснения, примеры, проверка усвоенного.</p>
-      <p><b>Где применить.</b> Освоить новую программу для работы. Подтянуть тему, которую объяснили один раз, а ты ничего не поняла.</p>
-    </div></details>
-
-  <details class="fold"><summary><span class="sm">5</span><span class="st">Literature Insights<span class="sub">поиск по научным публикациям</span></span><span class="pm"></span></summary>
-    <div class="fbody">
-      <p><b>Что делает.</b> Находит исследования по теме и сводит их в структурированный отчет.</p>
-      <p><b>Где применить.</b> Проверить, что реально показывают исследования по вопросу здоровья, питания или обучения, вместо пересказов в блогах.</p>
+      <p><b>Что делает.</b> Превращает надиктованное в связный текст без запинок, повторов и «э-э». Удобнее всего на iPhone: приложение AI Edge Eloquent бесплатное, работает без интернета и понимает русский. В Gemini для Mac диктовка включается долгим нажатием Fn, но пока только на английском. На Android она встроена в клавиатуру Gboard, правда, только на Pixel 11.</p>
+      <p><b>Где применить.</b> Наговорить пост по дороге. Продиктовать письмо или список покупок. Записать мысль, пока она не ушла, вместо того чтобы набирать ее одним пальцем.</p>
+      <a class="open" href="https://apps.apple.com/us/app/google-ai-edge-eloquent/id6756505519" target="_blank" rel="noopener">открыть Eloquent <span class="go">&rarr;</span></a>
     </div></details>
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 03 — ВИДЕО И ЗВУК ======================= -->
-<div class="wrap"><section id="s-make" data-title="Видео и звук" data-n="03">
-  <div class="shead"><span class="eyebrow">03 &middot; визуал и звук</span>
+<!-- ======================= 03 — ИНФОРМАЦИЯ ======================= -->
+<div class="wrap"><section id="s-find" data-title="Разобраться и найти" data-n="03">
+  <div class="shead"><span class="eyebrow">03 &middot; работа с информацией</span>
+    <h2>Разобраться и <span class="fancy">найти</span></h2></div>
+  <p class="foldhint">нажми на продукт, чтобы раскрыть</p>
+
+  <details class="fold"><summary><span class="sm">4</span><span class="st">Gemini<span class="sub">ассистент с доступом к твоему аккаунту</span></span><span class="pm"></span></summary>
+    <div class="fbody">
+      <p><b>Что делает.</b> Отвечает обычными словами и ищет по почте, диску, документам, календарю и фотографиям сразу.</p>
+      <p><b>Где применить.</b> Найти письмо, о котором помнишь только тему. Собрать сводку переписки за месяц. Посчитать по чекам, сколько уходит на подписки. Перед поездкой собрать в одно место бронь отеля и билеты из почты.</p>
+      <a class="open" href="https://gemini.google.com" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
+    </div></details>
+
+  <details class="fold"><summary><span class="sm">5</span><span class="st">Gemini Notebook<span class="sub">рабочий стол под один проект из твоих файлов</span></span><span class="pm"></span></summary>
+    <div class="fbody">
+      <p><b>Что делает.</b> Отвечает строго по загруженному и на каждую фразу дает ссылку на конкретный абзац в твоем документе. Аудио и видео расшифровывает при загрузке. Из тех же материалов собирает короткие видео-объяснения, квизы и карточки для повторения.</p>
+      <p><b>Где применить.</b> Разобрать договор, методичку или результаты анализов. Собрать конспект курса. Получить текстовую расшифровку созвона. Подготовиться к экзамену по своим же конспектам. Загрузить инструкцию к новой технике и спросить, как включить нужный режим.</p>
+      <a class="open" href="https://notebook.google.com" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
+    </div></details>
+
+  <details class="fold"><summary><span class="sm">6</span><span class="st">Skills в Gemini<span class="sub">свой ассистент под постоянную задачу, раньше назывались Gems</span></span><span class="pm"></span></summary>
+    <div class="fbody">
+      <p><b>Что делает.</b> Один раз описываешь, кто он, что делает и в каком виде отдает результат, дальше зовешь его, когда задача повторяется. Старые Gems Google переносит сюда же.</p>
+      <p><b>Где применить.</b> Еженедельный отчет по одному шаблону. Проверка текста по твоим правилам. Ответы клиентам в твоем тоне. Меню на неделю с учетом того, что ты не ешь.</p>
+      <a class="open" href="https://gemini.google.com" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
+    </div></details>
+
+  <details class="fold"><summary><span class="sm">7</span><span class="st">Learn Your Way<span class="sub">учебная платформа, которая перестраивает материал под тебя</span></span><span class="pm"></span></summary>
+    <div class="fbody">
+      <p><b>Что делает.</b> Берет тему или документ и разворачивает его в персональный курс: объяснения, примеры, проверка усвоенного.</p>
+      <p><b>Где применить.</b> Освоить новую программу для работы. Подтянуть тему, которую объяснили один раз, а ты ничего не поняла. Разобраться вместе с ребенком в школьной теме, которую на уроке прошли бегом.</p>
+      <a class="open" href="https://learnyourway.withgoogle.com" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
+    </div></details>
+</section></div>
+<div class="rule"></div>
+
+<!-- ======================= 04 — ВИДЕО И ЗВУК ======================= -->
+<div class="wrap"><section id="s-make" data-title="Видео и звук" data-n="04">
+  <div class="shead"><span class="eyebrow">04 &middot; визуал и звук</span>
     <h2>Сделать видео и <span class="fancy">звук</span></h2></div>
 
   <div class="scheme">
-    <svg viewBox="0 0 320 104" role="img" aria-label="Схема: описание словами превращается в готовый файл — ролик, трек или текст">
+    <svg viewBox="0 0 320 104" role="img" aria-label="Схема: описание словами превращается в готовый файл — ролик или трек">
       <rect x="6" y="6" width="308" height="92" class="sv-panel"></rect>
       <rect x="18" y="26" width="112" height="52" class="sv-sub"></rect>
       <text x="27" y="44" class="sv-t">Описание словами</text>
@@ -629,69 +662,62 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
       <path d="M140 52 L172 52" class="sv-ar" marker-end="url(#ah)"></path>
       <rect x="182" y="26" width="120" height="52" class="sv-hi"></rect>
       <text x="191" y="44" class="sv-t">Готовый файл</text>
-      <text x="191" y="58" class="sv-ts">ролик, трек,</text>
-      <text x="191" y="69" class="sv-ts">или текст</text>
+      <text x="191" y="58" class="sv-ts">ролик</text>
+      <text x="191" y="69" class="sv-ts">или трек</text>
     </svg>
     <p>Съемка, студия и монтаж не нужны: <b>вход везде один</b> &mdash; ты объясняешь словами, что хочешь получить.</p>
   </div>
 
   <p class="foldhint">нажми на продукт, чтобы раскрыть</p>
 
-  <details class="fold"><summary><span class="sm">6</span><span class="st">Flow<span class="sub">студия видео на моделях Google</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">8</span><span class="st">Flow<span class="sub">студия видео на моделях Google</span></span><span class="pm"></span></summary>
     <div class="fbody">
       <p><b>Что делает.</b> Собирает ролик по текстовому описанию: сцены, кадры, движение камеры.</p>
-      <p><b>Где применить.</b> Короткое видео для сторис или рекламы. Заставка. Визуал под пост, когда снимать нечего и некогда.</p>
+      <p><b>Где применить.</b> Короткое видео для сторис или рекламы. Заставка. Визуал под пост, когда снимать нечего и некогда. Ожившая открытка ко дню рождения.</p>
+      <a class="open" href="https://flow.google" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 
-  <details class="fold"><summary><span class="sm">7</span><span class="st">Flow Music<span class="sub">музыкальная студия</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">9</span><span class="st">Flow Music<span class="sub">музыкальная студия</span></span><span class="pm"></span></summary>
     <div class="fbody">
       <p><b>Что делает.</b> Создает песню целиком по описанию: стиль, настроение, голос.</p>
       <p><b>Где применить.</b> Музыка под рилс без споров об авторских правах. Джингл для подкаста. Поздравление под конкретного человека.</p>
+      <a class="open" href="https://www.flowmusic.app/" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 
-  <details class="fold"><summary><span class="sm">8</span><span class="st">Google Vids<span class="sub">ролики с ИИ-ведущим без камеры</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">10</span><span class="st">Google Vids<span class="sub">ролики с ИИ-ведущим без камеры</span></span><span class="pm"></span></summary>
     <div class="fbody">
       <p><b>Что делает.</b> Собирает короткий ролик по описанию или делает видео, где ИИ-ведущий читает твой текст. На бесплатном аккаунте число таких роликов в месяц ограничено.</p>
-      <p><b>Где применить.</b> Видеоинструкция для клиента или помощницы. Приветствие для новых подписчиков. Объяснение услуги, когда сниматься самой некогда или не хочется.</p>
-    </div></details>
-
-  <details class="fold"><summary><span class="sm">9</span><span class="st">AI Edge Eloquent<span class="sub">устная речь превращается в чистый текст</span></span><span class="pm"></span></summary>
-    <div class="fbody">
-      <p><b>Что делает.</b> Слушает надиктованное и отдает связный текст без запинок, повторов и «э-э».</p>
-      <p><b>Где применить.</b> Наговорить пост по дороге. Продиктовать письмо. Снять с себя правку черновиков, если писать долго, а говорить быстро.</p>
+      <p><b>Где применить.</b> Видеоинструкция для клиента или помощницы. Приветствие для новых подписчиков. Объяснение услуги, когда сниматься самой некогда или не хочется. Ролик из семейных фотографий к годовщине.</p>
+      <a class="open" href="https://workspace.google.com/products/vids/" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 04 — СОБРАТЬ ПОД СЕБЯ ======================= -->
-<div class="wrap"><section id="s-build" data-title="Собрать под себя" data-n="04">
-  <div class="shead"><span class="eyebrow">04 &middot; без кода</span>
+<!-- ======================= 05 — СОБРАТЬ ПОД СЕБЯ ======================= -->
+<div class="wrap"><section id="s-build" data-title="Собрать под себя" data-n="05">
+  <div class="shead"><span class="eyebrow">05 &middot; без кода</span>
     <h2>Собрать инструмент <span class="fancy">под себя</span></h2></div>
   <p class="foldhint">нажми на продукт, чтобы раскрыть</p>
 
-  <details class="fold"><summary><span class="sm">10</span><span class="st">Pomelli<span class="sub">маркетинговый ИИ для малого бизнеса и личного бренда</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">11</span><span class="st">Pomelli<span class="sub">маркетинговый ИИ для малого бизнеса и личного бренда</span></span><span class="pm"></span></summary>
     <div class="fbody">
       <p><b>Что делает.</b> Читает твой сайт по ссылке, сам собирает профиль бренда с цветами, шрифтами и тоном, дальше генерит по нему посты и рекламу.</p>
       <p><b>Где применить.</b> Контент для соцсетей в одном стиле. Рекламные макеты, когда дизайнера нет.</p>
+      <a class="open" href="https://labs.google.com/pomelli/about/" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 
-  <details class="fold"><summary><span class="sm">11</span><span class="st">Stitch<span class="sub">дизайн экранов по описанию</span></span><span class="pm"></span></summary>
+  <details class="fold"><summary><span class="sm">12</span><span class="st">Stitch<span class="sub">дизайн экранов по описанию</span></span><span class="pm"></span></summary>
     <div class="fbody">
       <p><b>Что делает.</b> Из описания делает готовый макет интерфейса и выгружает его в код.</p>
       <p><b>Где применить.</b> Показать разработчику, как должен выглядеть сайт или приложение. Собрать макет лендинга до того, как платить за дизайн.</p>
-    </div></details>
-
-  <details class="fold"><summary><span class="sm">12</span><span class="st">Vantage<span class="sub">тренажер рабочих навыков на живых сценариях</span></span><span class="pm"></span></summary>
-    <div class="fbody">
-      <p><b>Что делает.</b> Разыгрывает рабочую ситуацию с ИИ вместо коллег и дает обратную связь о том, как ты в ней действуешь.</p>
-      <p><b>Где применить.</b> Прогнать сложный разговор до того, как вести его вживую: переговоры, собеседование, отказ клиенту.</p>
+      <a class="open" href="https://stitch.withgoogle.com/" target="_blank" rel="noopener">открыть <span class="go">&rarr;</span></a>
     </div></details>
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 05 — РЯДОМ, НО ПЛАТНО ======================= -->
-<div class="wrap"><section id="s-paid" data-title="Рядом, но платно" data-n="05">
-  <div class="shead"><span class="eyebrow">05 &middot; отдельная полка</span>
+<!-- ======================= 06 — РЯДОМ, НО ПЛАТНО ======================= -->
+<div class="wrap"><section id="s-paid" data-title="Рядом, но платно" data-n="06">
+  <div class="shead"><span class="eyebrow">06 &middot; отдельная полка</span>
     <h2>Рядом, но <span class="fancy">платно</span></h2>
     <p>Один продукт вне двенадцати. В бесплатный аккаунт он не входит, но закрывает дырку, которой в списке выше нет, &mdash; готовые макеты.</p></div>
 
@@ -709,9 +735,9 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 06 — ДЛЯ КОДА ======================= -->
-<div class="wrap"><section id="s-code" data-title="Если ты пишешь код" data-n="06">
-  <div class="shead"><span class="eyebrow">06 &middot; отдельная полка</span>
+<!-- ======================= 07 — ДЛЯ КОДА ======================= -->
+<div class="wrap"><section id="s-code" data-title="Если ты пишешь код" data-n="07">
+  <div class="shead"><span class="eyebrow">07 &middot; отдельная полка</span>
     <h2>Если ты пишешь <span class="fancy">код</span></h2>
     <p>Три продукта из другой лиги: они тоже бесплатны, но нужны только разработчикам.</p></div>
 
@@ -723,9 +749,9 @@ body{background-image:repeating-linear-gradient(0deg,rgba(36,36,36,.012),rgba(36
 </section></div>
 <div class="rule"></div>
 
-<!-- ======================= 07 — С ЧЕГО НАЧАТЬ ======================= -->
-<div class="wrap"><section id="s-next" data-title="С чего начать" data-n="07">
-  <div class="shead"><span class="eyebrow">07 &middot; первый шаг</span><h2>С чего начать</h2></div>
+<!-- ======================= 08 — С ЧЕГО НАЧАТЬ ======================= -->
+<div class="wrap"><section id="s-next" data-title="С чего начать" data-n="08">
+  <div class="shead"><span class="eyebrow">08 &middot; первый шаг</span><h2>С чего начать</h2></div>
 
   <div class="prose">
     <p>Возьми один продукт под задачу, которая висит у тебя прямо сейчас, и дай ему один вечер. Не пять вкладок, а одну.</p>
